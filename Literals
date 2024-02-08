@@ -1,0 +1,26 @@
+//package com.company;
+public class Literals {
+    public static <string> void main(String[] args) {
+      byte age=46;
+      int age1=51;
+      short s=4;
+      float f=5.66f;
+      long age2=66666666666666L;
+      boolean b=true;
+      char ch='A';
+      double d=4.8787;
+      //string str="Antu";
+
+      System.out.println(age);
+        System.out.println(age1);
+        System.out.println(age2);
+        System.out.println(s);
+        System.out.println(f);
+        System.out.println(d);
+        System.out.println(ch);
+        //System.out.println(str);
+        System.out.println(b);
+
+
+    }
+}
