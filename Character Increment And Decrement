@@ -1,0 +1,10 @@
+public class Caracter_Increment_and_Decrement {
+    public static void main(String[] args) {
+       //Character increment and decrement
+        char ch= 'A';
+        System.out.println(++ch);
+        System.out.println(ch++);
+        System.out.println(--ch);
+        System.out.println(--ch);
+    }
+}
