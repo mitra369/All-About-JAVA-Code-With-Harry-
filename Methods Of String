@@ -1,0 +1,66 @@
+import java.util.Scanner;
+public class Methods_Of_Strings {
+    public static void main(String[] args) {
+        String name="Nandinee";
+//      String name=new String("Antu");
+
+      //Length of a string
+        int value=name.length();
+        System.out.println(value);
+
+       //name.toLowerCase()
+        String str=name.toLowerCase();
+        System.out.println(str);
+
+        //name.toUpperCase()
+        String str1=name.toUpperCase();
+        System.out.println(str1);
+
+        //name.trim()
+       // String name="    Nandinee";
+        System.out.println(name.trim());
+
+        //name.substring()
+        System.out.println(name.substring(2));
+        System.out.println(name.substring(2,5));
+
+        //name.replace()
+        System.out.println(name.replace('d','t'));//--Use double quotation.It suits better.
+        System.out.println(name.replace("d","ANTU")); //--More appropriate
+
+       //name.startsWith()
+        System.out.println(name.startsWith("N"));
+
+        //name.endsWith()
+        System.out.println(name.endsWith("ee"));
+
+        //name.charAt()
+        System.out.println(name.charAt(3));
+
+        //name.indexOf()
+        System.out.println(name.indexOf("a"));
+        System.out.println(name.indexOf("n",2));
+
+        //name.lastIndexOf()
+         System.out.println(name.lastIndexOf("dinee"));
+        System.out.println(name.lastIndexOf("nee",6));
+
+        //name.equals()
+        System.out.println(name.equals("Nandinee"));
+        System.out.println(name.equals("nandinee"));
+
+        //name.equalsIgnoreCase()
+        System.out.println(name.equalsIgnoreCase("nandinee"));
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
