@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Arrays_Input_And_Output {
+    public static void main(String[] args) {
+        
+        //Array Input
+        Scanner sc= new Scanner(System.in);
+        int n= sc.nextInt();
+         int [] array= new int[n];
+
+         for(int i=0;i<n;i++)
+         {
+             array[i]=sc.nextInt();
+         }
+       //Array Output
+         for(int i=0;i<n;i++)
+         {
+             System.out.println(array[i]);
+         }
+
+       //Array length
+        int [] arr= new int[10];
+        System.out.println(arr.length);
+
+
+
+    }
+}
