@@ -6,22 +6,26 @@ public class Arrays_Input_And_Output {
         Scanner sc= new Scanner(System.in);
         int n= sc.nextInt();
          int [] array= new int[n];
-
+//Way-1
          for(int i=0;i<n;i++)
          {
              array[i]=sc.nextInt();
          }
-       //Array Output
+
+//Way-2
+int array[]={10,20,30,40}
+
+ //Array Output
+
          for(int i=0;i<n;i++)
          {
              System.out.print(array[i]+" ");
          }
 
-       //Array length
+ //Array length
+
         int [] arr= new int[10];
         System.out.println(arr.length);
-
-
 
     }
 }
