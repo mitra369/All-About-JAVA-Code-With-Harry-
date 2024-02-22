@@ -1,0 +1,38 @@
+package com.company;
+import java.util.Scanner;
+
+public class Fibonacci_Series_Recursion {
+    static void fibonacci(int n)
+    {
+        if(n==1){
+            System.out.println("0");
+        }
+        else if(n==2){
+            System.out.println("0 1");
+        }
+        else
+        {
+            int first=0,second=1,next;
+            for(int i=1;i<=n;i++)
+            {
+              if(i==1)
+                  System.out.print("0 ");
+              else if(i==2)
+                  System.out.print("1 ");
+              else
+              {
+                  next=first+second;
+                  first=second;
+                  second= next;
+                  System.out.print(next+ " ");
+              }
+            }
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int n= sc.nextInt();
+
+       fibonacci(n);
+    }
+}
