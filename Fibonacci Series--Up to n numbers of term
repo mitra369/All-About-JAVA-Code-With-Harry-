@@ -1,0 +1,24 @@
+package com.company;
+import java.util.Scanner;
+public class Fibonacci_Series {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+
+        //Input the number of elements you want to see
+        int n= sc.nextInt();
+
+        int first=0,second=1,next;
+        for(int i=1;i<n;i++)
+        {
+            if(i==1)
+                System.out.print("0 ");
+           if(i==2)
+                System.out.print("1 ");
+
+            next=first+second;
+            first=second;
+            second=next;
+            System.out.print(next+ " ");
+        }
+    }
+}
