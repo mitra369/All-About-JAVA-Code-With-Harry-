@@ -1,0 +1,36 @@
+package com.company;
+import java.util.Scanner;
+public class Fibonacci_Series {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+
+        //Input till you want to see
+        int p=sc.nextInt();
+        int first=0,second=1;
+
+        if(p==0)
+        {
+            System.out.println("0");
+        }
+        else if(p==1)
+        {
+            System.out.println("0 1");
+
+        }
+        else
+        {
+            System.out.print("0 1 ");
+
+            int next1 = first + second;
+            while (p >= next1) {
+                next1 = first + second;
+                if (next1 > p)
+                    break;
+
+                first = second;
+                second = next1;
+                System.out.print(next1 + " ");
+            }
+        }
+    }
+}
