@@ -8,7 +8,7 @@ public class Fibonacci_Series {
         int n= sc.nextInt();
 
         int first=0,second=1,next;
-        for(int i=1;i<n;i++)
+        for(int i=1;i<=n;i++)
         {
             if(i==1)
                 System.out.print("0 ");
