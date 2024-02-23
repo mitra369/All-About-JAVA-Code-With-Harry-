@@ -1,10 +1,11 @@
 package com.company;
 import java.util.Scanner;
 
-//Constructor initialization
 class Employee{
     private int id;
    private String name;
+
+//Constructor initialization
     public Employee(){
         id=210112;
         name="Antu Mitra";
