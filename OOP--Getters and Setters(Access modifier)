@@ -1,7 +1,7 @@
 import java.util.Scanner;
 class Employee1{
-    int salary;
-    String name;
+    private int salary;
+    private String name;
 
     public void setsalary(int t) {
         salary=t;
