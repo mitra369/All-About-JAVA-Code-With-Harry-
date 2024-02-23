@@ -1,0 +1,45 @@
+package com.company;
+import java.util.Scanner;
+
+class Employee{
+    int age;
+    String name;
+    int id;
+    int salary;
+
+   public void printdetails()
+    {
+        System.out.println("My name is="+ name);
+        System.out.println("My age is="+age);
+        System.out.println("My universiy id number is="+id);
+        System.out.print("I earn money around=");
+    }
+    public int getsalary()
+    {
+        return salary;
+    }
+
+}
+ public class Creating_Our_Own_Java_Class {
+    public static void main(String[] args) {
+
+        Employee antu= new Employee();
+        Employee nandinee= new Employee();
+
+        antu.age=22;
+        antu.name="Antu Mitra";
+        antu.id=210112;
+        antu.salary=80000;
+
+        nandinee.age=22;
+        nandinee.name="Nandinee Datta";
+        nandinee.id=211839;
+        nandinee.salary=60000;
+
+        antu.printdetails();
+        System.out.println(antu.getsalary());
+        nandinee.printdetails();
+        System.out.println(nandinee.getsalary());
+
+    }
+}
