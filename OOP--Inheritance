@@ -1,0 +1,46 @@
+package com.company;
+
+class dad{
+    int dage;
+
+    public int getDage() {
+        return dage;
+    }
+
+    public void setDage(int dage) {
+        System.out.print("I am setting age of dad= ");
+        this.dage = dage;
+    }
+
+}
+
+//Creating an inheritance
+class son extends dad{
+    int sage;
+
+    public int getSage() {
+        return sage;
+    }
+    public void setSage(int sage) {
+        this.sage = sage;
+    }
+}
+
+
+
+public class Inheritance {
+    public static void main(String[] args) {
+        //Creating an object for dad class
+        dad d= new dad();
+        d.setDage(55);
+        System.out.println(d.getDage());
+
+        //Creating an object of son class
+        son s = new son();
+        s.setDage(43);
+        s.setSage(15);
+        System.out.println(s.getDage());
+        System.out.println(s.getSage());
+
+    }
+}
