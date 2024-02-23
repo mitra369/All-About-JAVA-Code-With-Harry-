@@ -1,0 +1,56 @@
+package com.company;
+import java.util.Scanner;
+
+class Calculation{
+ int side;
+ int length;
+ int width;
+ int radius;
+ public int squarearea()
+ {
+     return side*side;
+}
+public int squareperimeter(){
+      return 4*side;
+}
+public int trianglearea(){
+     return length*width;
+}
+public int tringleperimeter()
+{
+    return 2*(length+width);
+}
+
+public double circlearea()
+{
+    return 3.1416*radius*radius;
+}
+
+public double circleperimeter(){
+     return 2*3.1416*radius;
+}
+
+}
+
+public class Problem__Square_Traingle_Circle__Area_Perimeter {
+    public static void main(String[] args) {
+        Calculation square= new Calculation();
+        Calculation triangle= new Calculation();
+        Calculation circle= new Calculation();
+
+        square.side=5;
+        triangle.length=8;
+        triangle.width=3;
+        circle.radius=7;
+
+        System.out.println("Area of the square=" + square.squarearea());
+        System.out.println("Perimeter of the square=" + square.squareperimeter());
+
+        System.out.println("Area of the Triangle=" + triangle.trianglearea());
+        System.out.println("Perimeter of the Triangle=" + triangle.tringleperimeter());
+
+        System.out.println("Area of the Circle=" + circle.circlearea() );
+        System.out.println("Perimeter of the Circle =" + circle.circleperimeter());
+
+    }
+}
