@@ -1,0 +1,43 @@
+import java.util.Scanner;
+class Employee1{
+    int salary;
+    String name;
+
+    public void setsalary(int t) {
+        salary=t;
+    }
+    
+    public int getsalary()
+    {
+        return salary;
+    }
+    public String getname()
+    {
+        return name;
+    }
+    public void setname(String n)
+    {
+        name=n;
+    }
+
+}
+
+public class Creating_Class_GetAndSetName {
+    public static void main(String[] args) {
+
+    Employee1 antu= new Employee1();
+    Employee1 nandinee= new Employee1();
+
+    antu.setsalary(80000);
+    nandinee.setsalary(60000);
+    antu.setname("Antu Mitra");
+    nandinee.setname("Nandinee Datta");
+
+    System.out.println(antu.getname());
+    System.out.println(antu.getsalary());
+
+    System.out.println(nandinee.getname());
+    System.out.println(nandinee.getsalary());
+
+    }
+}
